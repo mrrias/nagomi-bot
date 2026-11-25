@@ -1,0 +1,8 @@
+NEW = ctrl + enter
+DONE = alt + d
+CANCEL = alt + c
+
+☐ update formatting in commands.ts
+☐ update apply ticket
+☐ add partner ticket 
+☐ add in a general variables file
