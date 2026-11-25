@@ -18,7 +18,7 @@ const guideContainer = new seyfert_1.Container()
     "* https://discord.com/channels/1376928479160963083/1461377727994138664 \n" +
     "* https://discord.com/channels/1376928479160963083/1574987129887400026"), new seyfert_1.Separator().setDivider(true), new seyfert_1.TextDisplay().setContent("### Useful Bot Commands \n" +
     "* `/help` brings up a general guide. \n" +
-    "* `/commands` brings up a list of all slash commands. (under development) \n" +
+    "* `/commands` brings up a list of all slash commands. \n" +
     "* `/bug-report` notifies developers if you have found a bug in the bot.\n"), new seyfert_1.Separator().setDivider(true), new seyfert_1.TextDisplay().setContent("### Links \n" +
     "* [**Server Website**](https://mrrias.github.io/nagomi/) \n" +
     "* [**Github Repo**](https://github.com/mrrias/nagomi-bot) \n" +

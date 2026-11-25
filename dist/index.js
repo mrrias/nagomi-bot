@@ -1,9 +1,10 @@
 "use strict";
-// 2.2
+// 2.3
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.client = void 0;
 //  notes  //
-// commands details/content updated
+// new command 
+// "/commands" 
 //  requirements  //
 require("dotenv/config");
 const seyfert_1 = require("seyfert");

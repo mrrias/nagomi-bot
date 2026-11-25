@@ -32,7 +32,7 @@ const guideContainer = new Container()
     new TextDisplay().setContent(
         "### Useful Bot Commands \n" +
         "* `/help` brings up a general guide. \n" +
-        "* `/commands` brings up a list of all slash commands. (under development) \n" +
+        "* `/commands` brings up a list of all slash commands. \n" +
         "* `/bug-report` notifies developers if you have found a bug in the bot.\n"
     ),
     new Separator().setDivider(true),

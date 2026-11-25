@@ -1,10 +1,13 @@
-// 2.2
+
+// 2.3
 
 
 
 //  notes  //
 
-// commands details/content updated
+// new command 
+// "/commands" 
+
 
 
 //  requirements  //
