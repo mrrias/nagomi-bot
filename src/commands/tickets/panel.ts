@@ -19,8 +19,15 @@ const container = new Container()
 .setColor(0xff99e9)
 .addComponents(
     new TextDisplay().setContent(
-        "### Prism Tickets \n" +
-        "Choose a ticket type below to get started."
+        "## Nagomi Ticket \n" +
+        "### Apply \n" +
+        "Apply for staff positions. \n" +
+        "### Report \n" +
+        "Notify staff of actions of a member that do not follow https://discord.com/channels/1376928479160963083/1379535229278097661 \n" +
+        "### Partner \n" +
+        "Discuss partnership with our server here. \n" +
+        "### Help \n" +
+        "General inquiries or any matters that do not fit any of the above."
     )
 );
 

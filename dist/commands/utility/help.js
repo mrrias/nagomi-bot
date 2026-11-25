@@ -10,12 +10,19 @@ const seyfert_1 = require("seyfert");
 //   command information  //
 const guideContainer = new seyfert_1.Container()
     .setColor(0xff99e9)
-    .addComponents(new seyfert_1.TextDisplay().setContent("# Welcome to the Prism!\n\n" +
+    .addComponents(new seyfert_1.TextDisplay().setContent("# Welcome to the Nagomi!\n\n" +
     "Here is everything you need to know to get started and navigate your way around."), new seyfert_1.Separator().setDivider(true), new seyfert_1.TextDisplay().setContent("### Useful Channels\n" +
-    "* https://discord.com/channels/1566781855183667250/1566794245438705734**:** Check here for updates and news.\n" +
-    "* https://discord.com/channels/1566781855183667250/1566794255928922122**:** Update yourself on the rules here.\n" +
-    "* https://discord.com/channels/1566781855183667250/1568919135256191016**:** Our main community chat.\n" +
-    "* https://discord.com/channels/1566781855183667250/1568920045747306598**:** Ping staff here with any feedback or questions."));
+    "* https://discord.com/channels/1376928479160963083/1551550700373278801 \n" +
+    "* https://discord.com/channels/1376928479160963083/1379535229278097661 \n" +
+    "* https://discord.com/channels/1376928479160963083/1376928550371725422 \n" +
+    "* https://discord.com/channels/1376928479160963083/1461377727994138664 \n" +
+    "* https://discord.com/channels/1376928479160963083/1574987129887400026"), new seyfert_1.Separator().setDivider(true), new seyfert_1.TextDisplay().setContent("### Useful Bot Commands \n" +
+    "* `/help` brings up a general guide. \n" +
+    "* `/commands` brings up a list of all slash commands. (under development) \n" +
+    "* `/bug-report` notifies developers if you have found a bug in the bot.\n"), new seyfert_1.Separator().setDivider(true), new seyfert_1.TextDisplay().setContent("### Links \n" +
+    "* [**Server Website**](https://mrrias.github.io/nagomi/) \n" +
+    "* [**Github Repo**](https://github.com/mrrias/nagomi-bot) \n" +
+    "* [**Head Developer**](https://github.com/mrrias) \n"));
 let ServerGuideCommand = class ServerGuideCommand extends seyfert_1.Command {
     async run(ctx) {
         await ctx.write({

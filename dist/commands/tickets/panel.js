@@ -11,8 +11,15 @@ const types_1 = require("../../tickets/types");
 //  command information  //
 const container = new seyfert_1.Container()
     .setColor(0xff99e9)
-    .addComponents(new seyfert_1.TextDisplay().setContent("### Prism Tickets \n" +
-    "Choose a ticket type below to get started."));
+    .addComponents(new seyfert_1.TextDisplay().setContent("## Nagomi Ticket \n" +
+    "### Apply \n" +
+    "Apply for staff positions. \n" +
+    "### Report \n" +
+    "Notify staff of actions of a member that do not follow https://discord.com/channels/1376928479160963083/1379535229278097661 \n" +
+    "### Partner \n" +
+    "Discuss partnership with our server here. \n" +
+    "### Help \n" +
+    "General inquiries or any matters that do not fit any of the above."));
 const selectMenu = new seyfert_1.StringSelectMenu()
     .setCustomId("ticket:category")
     .setPlaceholder("Choose a ticket type")

@@ -1,12 +1,10 @@
-// 2.1
+// 2.2
+
 
 
 //  notes  //
 
-// ticket system
-// bot name change
-// transferred to new server 
-// roles, perms and pings updated
+// commands details/content updated
 
 
 //  requirements  //
