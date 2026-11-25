@@ -24,10 +24,14 @@ export default class CloseTicket extends ComponentCommand {
 
         const ownerId = ctx.customId.split(":")[2];
         const isStaff = ctx.member.roles.keys.includes(STAFF_ROLE_ID);
+        const applyAdminRoleId = process.env.APPLY_ADMIN_ROLE_ID;
+        const isApplyAdmin = applyAdminRoleId
+            ? ctx.member.roles.keys.includes(applyAdminRoleId)
+            : false;
         const isAdministrator = ctx.member.permissions.has(PermissionFlagsBits.Administrator);
-        if (!isStaff && !isAdministrator) {
+        if (!isStaff && !isApplyAdmin && !isAdministrator) {
             await ctx.write({
-                content: "Only members with the Staff role or Administrator permission can close tickets.",
+                content: "Only staff members, the configured Apply admin role, or server administrators can close tickets.",
                 flags: MessageFlags.Ephemeral
             });
             return;

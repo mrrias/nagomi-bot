@@ -70,7 +70,10 @@ class CreateTicket extends seyfert_1.ModalCommand {
                 return;
             }
             const supportRoleId = process.env.SUPPORT_ROLE_ID;
-            const staffRoleIds = new Set([types_1.STAFF_ROLE_ID, supportRoleId].filter((roleId) => roleId !== undefined));
+            const applyAdminRoleId = process.env.APPLY_ADMIN_ROLE_ID;
+            const staffRoleIds = new Set((selectedType === "apply"
+                ? [applyAdminRoleId]
+                : [types_1.STAFF_ROLE_ID, supportRoleId]).filter((roleId) => Boolean(roleId)));
             const overwrites = [
                 {
                     id: ctx.guildId,
@@ -101,7 +104,7 @@ class CreateTicket extends seyfert_1.ModalCommand {
                 .slice(0, 20) || "user";
             const categoryId = process.env.TICKET_CATEGORY_ID;
             const ticket = await guild.channels.create({
-                name: `ticket-${selectedType}-${username}-${ctx.author.id.slice(-4)}`,
+                name: `${selectedType}-${username}`,
                 type: seyfert_1.ChannelType.GuildText,
                 topic,
                 permission_overwrites: overwrites,

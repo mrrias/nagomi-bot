@@ -1,10 +1,12 @@
 "use strict";
-//  bot version  //
+// 2.1
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.client = void 0;
-// 2.0
 //  notes  //
-// ticket system finalised
+// ticket system
+// bot name change
+// transferred to new server 
+// roles, perms and pings updated
 //  requirements  //
 require("dotenv/config");
 const seyfert_1 = require("seyfert");

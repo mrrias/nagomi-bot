@@ -1,12 +1,12 @@
-
-//  bot version  //
-
-// 2.0
+// 2.1
 
 
 //  notes  //
 
-// ticket system finalised
+// ticket system
+// bot name change
+// transferred to new server 
+// roles, perms and pings updated
 
 
 //  requirements  //

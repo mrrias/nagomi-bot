@@ -110,9 +110,13 @@ export default class CreateTicket extends ModalCommand {
             }
 
             const supportRoleId = process.env.SUPPORT_ROLE_ID;
+            const applyAdminRoleId = process.env.APPLY_ADMIN_ROLE_ID;
             const staffRoleIds = new Set(
-                [STAFF_ROLE_ID, supportRoleId].filter(
-                    (roleId): roleId is string => roleId !== undefined
+                (selectedType === "apply"
+                    ? [applyAdminRoleId]
+                    : [STAFF_ROLE_ID, supportRoleId]
+                ).filter(
+                    (roleId): roleId is string => Boolean(roleId)
                 )
             );
             const overwrites = [
@@ -149,7 +153,7 @@ export default class CreateTicket extends ModalCommand {
             const categoryId = process.env.TICKET_CATEGORY_ID;
 
             const ticket = await guild.channels.create({
-                name: `ticket-${selectedType}-${username}-${ctx.author.id.slice(-4)}`,
+                name: `${selectedType}-${username}`,
                 type: ChannelType.GuildText,
                 topic,
                 permission_overwrites: overwrites,
