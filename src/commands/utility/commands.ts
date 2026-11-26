@@ -43,11 +43,11 @@ export default class SlashCommandsCommand extends Command {
                     ? ` - *${command.permissions}*`
                     : "";
 
-                return `**${command.usage}** — ${command.description}${permission}`;
+                return `\`${command.usage}\` — ${command.description}${permission}`;
             }).join("\n");
 
             container.addComponents(
-                new TextDisplay().setContent(`## ${category}\n${commandList}`)
+                new TextDisplay().setContent(`### ${category}\n${commandList}`)
             );
         }
 

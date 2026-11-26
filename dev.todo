@@ -2,8 +2,10 @@ NEW = ctrl + enter
 DONE = alt + d
 CANCEL = alt + c
 
-☐ update formatting in commands.ts
-☐ update apply ticket
+Today:
+    ✔ update formatting in commands.ts @done (11/27/2026, 10:30:24 AM)
+    ☐ update apply ticket
+
 ☐ add partner ticket 
 ☐ add in a general variables file
 ☐ edit ticket panel - more minimal, cleaner layout

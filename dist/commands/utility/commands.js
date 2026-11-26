@@ -22,9 +22,9 @@ let SlashCommandsCommand = class SlashCommandsCommand extends seyfert_1.Command 
                 const permission = command.permissions
                     ? ` - *${command.permissions}*`
                     : "";
-                return `**${command.usage}** — ${command.description}${permission}`;
+                return `\`${command.usage}\` — ${command.description}${permission}`;
             }).join("\n");
-            container.addComponents(new seyfert_1.TextDisplay().setContent(`## ${category}\n${commandList}`));
+            container.addComponents(new seyfert_1.TextDisplay().setContent(`### ${category}\n${commandList}`));
         }
         await ctx.write({
             components: [container],
