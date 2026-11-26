@@ -70,9 +70,9 @@ class CreateTicket extends seyfert_1.ModalCommand {
                 return;
             }
             const supportRoleId = process.env.SUPPORT_ROLE_ID;
-            const applyAdminRoleId = process.env.APPLY_ADMIN_ROLE_ID;
+            const adminRoleId = process.env.ADMIN_ROLE_ID;
             const staffRoleIds = new Set((selectedType === "apply"
-                ? [applyAdminRoleId]
+                ? [adminRoleId]
                 : [types_1.STAFF_ROLE_ID, supportRoleId]).filter((roleId) => Boolean(roleId)));
             const overwrites = [
                 {
@@ -110,12 +110,15 @@ class CreateTicket extends seyfert_1.ModalCommand {
                 permission_overwrites: overwrites,
                 ...(categoryId ? { parent_id: categoryId } : {})
             });
-            if (supportRoleId) {
+            const pingRoleId = selectedType === "apply"
+                ? adminRoleId
+                : supportRoleId;
+            if (pingRoleId) {
                 await ticket.messages.write({
-                    content: `<@&${supportRoleId}>`,
+                    content: `<@&${pingRoleId}>`,
                     allowed_mentions: {
                         parse: [],
-                        roles: [supportRoleId]
+                        roles: [pingRoleId]
                     }
                 });
             }

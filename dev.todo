@@ -2,10 +2,11 @@ NEW = ctrl + enter
 DONE = alt + d
 CANCEL = alt + c
 
-Today:
-    ✔ update formatting in commands.ts @done (11/27/2026, 10:30:24 AM)
-    ☐ update apply ticket
+
+✔ update apply ticket @done (11/27/2026, 10:45:12 AM)
+✔ fix apply ping role @done (11/27/2026, 10:56:37 AM)
 
 ☐ add partner ticket 
 ☐ add in a general variables file
 ☐ edit ticket panel - more minimal, cleaner layout
+☐ create new server guide

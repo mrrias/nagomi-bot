@@ -1,11 +1,12 @@
 
-// 2.4
+// 2.5
 
 
 
 //  notes  //
 
-// commands.ts formatting fixed 
+// updated apply ticket questions
+// fixed apply ticket ping role
 
 
 

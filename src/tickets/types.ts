@@ -15,14 +15,28 @@ export const ticketQuestions = {
         {
             id: "ticket:role",
             label: "What role are you applying for?",
-            placeholder: "Enter the role name.",
+            placeholder: "Mod, Support, Positivity, Partner Manager",
             style: TextInputStyle.Short,
             maxLength: 100
         },
         {
             id: "ticket:reason",
-            label: "Why do you want to apply?",
-            placeholder: "Explain why you want this role.",
+            label: "Why are you applying for this position?",
+            placeholder: "I want to be staff because...",
+            style: TextInputStyle.Paragraph,
+            maxLength: 1500
+        },
+        {
+            id: "ticket:experience",
+            label: "What prior experience do you have?",
+            placeholder: "List any prior experience you have had being staff.",
+            style: TextInputStyle.Paragraph,
+            maxLength: 1500
+        },
+        {
+            id: "ticket:availability",
+            label: "How active are you in Nagomi?",
+            placeholder: "Please state how many times a day/week/month you are active.",
             style: TextInputStyle.Paragraph,
             maxLength: 1000
         }

@@ -110,10 +110,10 @@ export default class CreateTicket extends ModalCommand {
             }
 
             const supportRoleId = process.env.SUPPORT_ROLE_ID;
-            const applyAdminRoleId = process.env.APPLY_ADMIN_ROLE_ID;
+            const adminRoleId = process.env.ADMIN_ROLE_ID;
             const staffRoleIds = new Set(
                 (selectedType === "apply"
-                    ? [applyAdminRoleId]
+                    ? [adminRoleId]
                     : [STAFF_ROLE_ID, supportRoleId]
                 ).filter(
                     (roleId): roleId is string => Boolean(roleId)
@@ -160,12 +160,16 @@ export default class CreateTicket extends ModalCommand {
                 ...(categoryId ? { parent_id: categoryId } : {})
             });
 
-            if (supportRoleId) {
+            const pingRoleId = selectedType === "apply"
+                ? adminRoleId
+                : supportRoleId;
+
+            if (pingRoleId) {
                 await ticket.messages.write({
-                    content: `<@&${supportRoleId}>`,
+                    content: `<@&${pingRoleId}>`,
                     allowed_mentions: {
                         parse: [],
-                        roles: [supportRoleId]
+                        roles: [pingRoleId]
                     }
                 });
             }

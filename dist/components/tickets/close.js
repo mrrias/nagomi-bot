@@ -17,7 +17,7 @@ class CloseTicket extends seyfert_1.ComponentCommand {
         }
         const ownerId = ctx.customId.split(":")[2];
         const isStaff = ctx.member.roles.keys.includes(types_1.STAFF_ROLE_ID);
-        const applyAdminRoleId = process.env.APPLY_ADMIN_ROLE_ID;
+        const applyAdminRoleId = process.env.APPLY_ADMIN_ROLE_ID ?? process.env.ADMIN_ROLE_ID;
         const isApplyAdmin = applyAdminRoleId
             ? ctx.member.roles.keys.includes(applyAdminRoleId)
             : false;
