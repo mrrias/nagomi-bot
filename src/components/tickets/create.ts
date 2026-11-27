@@ -36,7 +36,7 @@ const pendingTickets = new Set<string>();
 //  modal execution  //
 
 export default class CreateTicket extends ModalCommand {
-    customId = /^ticket:reason:(apply|report|help)$/;
+    customId = /^ticket:reason:(apply|report|partner|help)$/;
 
     async run(ctx: ModalContext) {
         if (!ctx.inGuild()) {

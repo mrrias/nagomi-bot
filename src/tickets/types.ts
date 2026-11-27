@@ -1,8 +1,9 @@
-import { TextInputStyle } from "seyfert";
+import { Label, TextInputStyle } from "seyfert";
 
 export const ticketTypeLabels = {
     apply: "Apply",
     report: "Report",
+    partner: "Partner",
     help: "Help"
 } as const;
 
@@ -56,6 +57,30 @@ export const ticketQuestions = {
             style: TextInputStyle.Short,
             maxLength: 20
         }
+    ],
+    partner: [
+        {
+            id: "ticket:member-count",
+            label: "Does your server have 100+ human members?",
+            placeholder: "Yes, No, Unsure",
+            style: TextInputStyle.Short,
+            maxLength: 20
+        },
+        {
+            id: "ticket:sfw",
+            label: "Is your server SFW?",
+            placeholder: "Yes, No, Unsure",
+            style: TextInputStyle.Short,
+            maxLength: 20
+        },
+        {
+            id: "ticket:nontoxic",
+            label: "Is your server non-toxic?",
+            placeholder: "Yes, No, Unsure",
+            style: TextInputStyle.Short,
+            maxLength: 20
+        }
+
     ],
     help: [
         {

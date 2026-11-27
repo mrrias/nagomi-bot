@@ -1,11 +1,11 @@
 
-// 2.7
+// 2.8
 
 
 
 //  notes  //
 
-// format updates for ticket panel
+// partnership ticket added
 
 
 

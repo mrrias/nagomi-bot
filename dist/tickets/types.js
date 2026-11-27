@@ -6,6 +6,7 @@ const seyfert_1 = require("seyfert");
 exports.ticketTypeLabels = {
     apply: "Apply",
     report: "Report",
+    partner: "Partner",
     help: "Help"
 };
 exports.STAFF_ROLE_ID = "1573628588349980764";
@@ -52,6 +53,29 @@ exports.ticketQuestions = {
             id: "ticket:reported-user-id",
             label: "Discord user ID of the person being reported",
             placeholder: "Enter the user's Discord ID.",
+            style: seyfert_1.TextInputStyle.Short,
+            maxLength: 20
+        }
+    ],
+    partner: [
+        {
+            id: "ticket:member-count",
+            label: "Does your server have 100+ human members?",
+            placeholder: "Yes, No, Unsure",
+            style: seyfert_1.TextInputStyle.Short,
+            maxLength: 20
+        },
+        {
+            id: "ticket:sfw",
+            label: "Is your server SFW?",
+            placeholder: "Yes, No, Unsure",
+            style: seyfert_1.TextInputStyle.Short,
+            maxLength: 20
+        },
+        {
+            id: "ticket:nontoxic",
+            label: "Is your server non-toxic?",
+            placeholder: "Yes, No, Unsure",
             style: seyfert_1.TextInputStyle.Short,
             maxLength: 20
         }

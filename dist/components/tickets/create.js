@@ -11,7 +11,7 @@ const ticketPermissions = seyfert_1.PermissionFlagsBits.ViewChannel |
 const pendingTickets = new Set();
 //  modal execution  //
 class CreateTicket extends seyfert_1.ModalCommand {
-    customId = /^ticket:reason:(apply|report|help)$/;
+    customId = /^ticket:reason:(apply|report|partner|help)$/;
     async run(ctx) {
         if (!ctx.inGuild()) {
             await ctx.write({
