@@ -10,13 +10,14 @@ import {
     PermissionFlagsBits,
 } from "seyfert";
 import { ticketTypeLabels } from "../../tickets/types";
+import { embedColor } from "../../components/variables/varMain";
 
 
 
 //  command information  //
 
 const container = new Container()
-.setColor(0xff99e9)
+.setColor(embedColor)
 .addComponents(
     new TextDisplay().setContent(
         "## Nagomi Ticket \n" +

@@ -7,13 +7,14 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const seyfert_1 = require("seyfert");
+const varMain_1 = require("../../components/variables/varMain");
 const varCmds_1 = require("../../components/variables/varCmds");
 //   command information  //
 let SlashCommandsCommand = class SlashCommandsCommand extends seyfert_1.Command {
     async run(ctx) {
         const categories = ["Utility", "Tickets"];
         const container = new seyfert_1.Container()
-            .setColor(0xff99e9);
+            .setColor(varMain_1.embedColor);
         container.addComponents(new seyfert_1.TextDisplay().setContent("# Nagomi Slash Commands\n\n" +
             "Use these commands in this server."), new seyfert_1.Separator().setDivider(true));
         for (const category of categories) {

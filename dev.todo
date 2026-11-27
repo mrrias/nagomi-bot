@@ -2,8 +2,8 @@ NEW = ctrl + enter
 DONE = alt + d
 CANCEL = alt + c
 
-
-☐ add partner ticket 
-☐ add in a general variables file
+✔ add in a general variables file @done (11/27/2026, 1:22:14 PM)
 ☐ edit ticket panel - more minimal, cleaner layout
+
+☐ add partner ticket
 ☐ create new server guide

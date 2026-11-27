@@ -7,13 +7,14 @@ import {
     Separator,
     MessageFlags
 } from "seyfert";
+import { embedColor } from "../../components/variables/varMain";
 
 
 
 //   command information  //
 
 const guideContainer = new Container()
-.setColor(0xff99e9)
+.setColor(embedColor)
 .addComponents(
     new TextDisplay().setContent(
         "# Welcome to the Nagomi!\n\n" +

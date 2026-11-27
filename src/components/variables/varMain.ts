@@ -1,0 +1,1 @@
+export const embedColor = 0xff99e9;

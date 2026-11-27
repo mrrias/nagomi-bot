@@ -7,6 +7,7 @@ import {
     MessageFlags,
     type CommandContext
 } from "seyfert";
+import { embedColor } from "../../components/variables/varMain";
 import { slashCommands } from "../../components/variables/varCmds";
 
 
@@ -26,7 +27,7 @@ export default class SlashCommandsCommand extends Command {
     async run(ctx: CommandContext) {
         const categories = ["Utility", "Tickets"] as const;
         const container = new Container()
-            .setColor(0xff99e9);
+            .setColor(embedColor);
 
         container.addComponents(
             new TextDisplay().setContent(

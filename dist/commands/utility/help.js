@@ -7,9 +7,10 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const seyfert_1 = require("seyfert");
+const varMain_1 = require("../../components/variables/varMain");
 //   command information  //
 const guideContainer = new seyfert_1.Container()
-    .setColor(0xff99e9)
+    .setColor(varMain_1.embedColor)
     .addComponents(new seyfert_1.TextDisplay().setContent("# Welcome to the Nagomi!\n\n" +
     "Here is everything you need to know to get started and navigate your way around."), new seyfert_1.Separator().setDivider(true), new seyfert_1.TextDisplay().setContent("### Useful Channels\n" +
     "* https://discord.com/channels/1376928479160963083/1551550700373278801 \n" +

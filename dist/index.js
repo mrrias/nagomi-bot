@@ -1,10 +1,10 @@
 "use strict";
-// 2.5
+// 2.6
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.client = void 0;
 //  notes  //
-// updated apply ticket questions
-// fixed apply ticket ping role
+// main variables file added
+// embed colour variable updated
 //  requirements  //
 require("dotenv/config");
 const seyfert_1 = require("seyfert");

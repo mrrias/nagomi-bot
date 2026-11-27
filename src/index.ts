@@ -1,12 +1,12 @@
 
-// 2.5
+// 2.6
 
 
 
 //  notes  //
 
-// updated apply ticket questions
-// fixed apply ticket ping role
+// main variables file added
+// embed colour variable updated
 
 
 
