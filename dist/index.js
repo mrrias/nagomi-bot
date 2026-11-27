@@ -1,10 +1,9 @@
 "use strict";
-// 2.6
+// 2.7
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.client = void 0;
 //  notes  //
-// main variables file added
-// embed colour variable updated
+// format updates for ticket panel
 //  requirements  //
 require("dotenv/config");
 const seyfert_1 = require("seyfert");

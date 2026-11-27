@@ -20,15 +20,16 @@ const container = new Container()
 .setColor(embedColor)
 .addComponents(
     new TextDisplay().setContent(
-        "## Nagomi Ticket \n" +
+        "# Nagomi Ticket \n" +
+        "-# Select from the below options when opening a ticket. Only one ticket can be open at a time. If you have multiple concerns please open a help ticket. \n" +
         "### Apply \n" +
-        "Apply for staff positions. \n" +
+        "```Apply for staff positions.``` \n" +
         "### Report \n" +
-        "Notify staff of actions of a member that do not follow https://discord.com/channels/1376928479160963083/1379535229278097661 \n" +
+        "```Report another member to staff for breaking server rules.``` \n" +
         "### Partner \n" +
-        "Discuss partnership with our server here. \n" +
+        "```Discuss partnership with our server here.``` \n" +
         "### Help \n" +
-        "General inquiries or any matters that do not fit any of the above."
+        "```General inquiries or any matters that do not fit any of the above.``` \n"
     )
 );
 

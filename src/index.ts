@@ -1,12 +1,11 @@
 
-// 2.6
+// 2.7
 
 
 
 //  notes  //
 
-// main variables file added
-// embed colour variable updated
+// format updates for ticket panel
 
 
 
